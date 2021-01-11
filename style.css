@@ -1,8 +1,10 @@
 body{
     margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    background-color: greenyellow;
 }
 
-.entete{
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,10 +14,34 @@ body{
 .menu ul li{
     list-style: none;
     display: inline-block;
+    padding: 20px;
+    padding-top: 50px;  
 }
 
+ul{
+    margin: none;
+}
 
+#hebergement{
+    border-top: 5px;
+    border-top-style: solid;
+    border-color: hsl(217, 32%, 64%);
+    color: hsl(217, 32%, 64%);
+}
+
+#inscrire{
+    color: #0065FC;
+}
 
 .logo img{
     width: 100px;
+    padding-top: 30px;
 }
+
+.banniere2{
+    border-radius: 10px;
+}
+
+.iconify{
+    background-color: #F2F2F2;
+}e
