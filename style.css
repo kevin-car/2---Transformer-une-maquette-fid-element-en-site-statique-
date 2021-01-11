@@ -2,39 +2,20 @@ body{
     margin: 0px;
 }
 
-.logo{
-    position: absolute;
-    left: 0;
-    width: 10%;
-    background-size: cover
+.entete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.menu{
-    position: absolute;
-    right: 0;    
-}
-
-ul{
-    margin: 0;
-}
-
-.menu ul li {
+.menu ul li{
+    list-style: none;
     display: inline-block;
-    margin-right: 10px;
-    height: 40px;
-    padding: 10px;
-    padding-top: 40px;
 }
 
-#inscrire{
-    color: blue;   
-}
 
-#hebergement{
-    color: blue;
-    border-top-style: solid;
-    border-top-width: 5px;
-    border-top-color: darkblue;
-    
 
+.logo img{
+    width: 100px;
 }
