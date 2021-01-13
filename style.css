@@ -1,7 +1,15 @@
 body{
     margin: 0px;
     font-family: 'Raleway', sans-serif;
-    background-color: greenyellow;
+    background-color: yellow;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0%;
+}
+
+
+li{
+    list-style: none;
 }
 
 .header{
@@ -36,12 +44,131 @@ ul{
 .logo img{
     width: 100px;
     padding-top: 30px;
+    font-size: 20px;
 }
 
-.banniere2{
-    border-radius: 10px;
+.banniere_recherche{
+    display: inline-flex;
+    justify-content: flex-start; 
+    background-color: white;
+    vertical-align: middle;
+
 }
 
-.iconify{
+#site-search{
+    background-color: white;
+    border: none;
+    margin-left: 10;
+}
+
+#icone_gps{
     background-color: #F2F2F2;
-}e
+    padding:0px;
+    align-items: center;
+}
+
+#cliquer_rechercher{
+    background-color:#0065FC;
+    color: white;
+    font-size: small;
+    padding:20px;
+    border: 0px #F2F2F2 solid;
+    border-radius: 10px 40px 40px 10px;
+}
+
+#liste_filtres{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+#titre_filtres{
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0px blue dashed;
+}
+
+/*     BANNIERE OU IL Y A LES FILTRES */
+
+.banniere3 ul li {
+    border: 1px #F2F2F2 SOLID;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.banniere3 ul li {
+    display: flex;
+    background-color: red;
+    align-items: center;
+}
+
+.banniere3 ul #titre_filtres {
+    border: 0;
+    background-color: none;
+    justify-content: space-between 5px;
+}
+
+/*      BARRE DU COMMENTAIRE  */
+
+.nb_logement{
+    display: flex;
+    align-items: center;
+    }
+
+.nb_logement i{
+    margin-right: 10px;
+    background-color: #F2F2F2
+}
+
+/*  HOTELS A marseille  */
+
+.hebergements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Marseille{
+    background-color: red;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.populaire{
+    background-color: indigo;
+    width: 35%;
+}
+
+.hotels_marseille{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cadre_hotel{
+    display: flex;
+    flex-direction: column;
+    border: 3px green dashed;
+    width: 30%;
+    height: auto;
+}
+
+.etoile{
+    display: flex;
+    flex-direction: row;
+}
+
+/*      HOTELS EN PROMO   */
+
+.hotels_populaires{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+.images_populaire img{
+max-width: 300px;}
