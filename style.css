@@ -1,6 +1,6 @@
 body{
-    background-color: coral;
-    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
     padding: 0;
 }
 
@@ -13,38 +13,84 @@ li{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    height: 100px;
+    align-items: start-end;
 }
 
 .logo img{
     width: 100px;
-    background-color: brown;
+    padding-top: 30px
 }
 
 
 .menu ul li {
     list-style: none;
     display: inline;
-    margin: 10px;
-}
+    padding : 15px;
 
-.menu{
-    float: right;
-    background-color: chartreuse;
 }
 
 #hebergement{
-    border-top: 1px black solid;
-    padding: 15px;
+    color: #88a2c9 ;
+    border-top: 1px rgb(136, 136, 197) solid;
+}
+
+#inscrire{
+    color: #0065FC;
 }
 
 /* TITRES  */
+
+.banniere p, h1{
+    margin:10px;
+}
+
+p{
+    font-size: small;
+}
+
+h1{
+    font-size: 1.5em;
+}
 
 /* TITRES  */   
 /* BARRE DE RECHERCHE */
 
 .banniere_recherche{
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: max-content;
+    align-items: flex-start;
+}
+
+.banniere_recherche i, #site-search, button{
+    height: 35px;
+}
+
+.banniere_recherche i{
+    display: flex;
+    background-color: #f2f2f2;
+    width: 35px;
+    border: 0px #f2f2f2 solid;
+    border-radius: 10px 0px 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banniere_recherche button{
+    border: 0;
+    border: 0px #f2f2f2 solid;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(16, 39, 250);
+    color : white;
+    font-size: 0.8em;
+}
+
+
+.banniere_recherche input{
+    padding: 0;
+    border: 0;
 }
 
 /* BARRE DES FILTRES  */
@@ -52,21 +98,62 @@ header{
 #liste_filtres{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 0;
+    margin-top: 40px;
 }
 
-#liste_filtres div{
+#liste_filtres div {
     display: flex;
-    flex-direction: row;
-    align-items: flex-center;
+    height: max-content;
+    margin-right: 20px;
+    padding: 0px;
+    align-items: center;
+    border: 2px solid rgba(95, 81, 81, 0.452);
+    border-radius: 20px;
+    background-color: #f2f2f2;
 }
+
+.nonet {
+    background-color: chartreuse;}
+
+#liste_filtres div i {
+    display: flex;
+    background-color: #a1aceb;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#liste_filtres div span{
+    display: flex;
+    background-color: white;
+    height: 25px;
+    align-items: center;
+    border-radius: 20px;
+}
+
 
 /* barre du commentaire */
 
-.nb_logement p i {
+.nb_logement div i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
+    margin: 10px;
+    height: 1px;
+    width: 1px;
+    border: 2px solid rgba(95, 81, 81, 0.452);
+    border-radius: 1000%;
 }
 
+.nb_logement  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 /* HEBERGEMENTS */
 
@@ -88,6 +175,9 @@ header{
     width: 40%;
 }
 
+#photo_marseille{
+    background: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
 
 
 /* ACTIVITES A MARSEILLE */
@@ -113,5 +203,4 @@ header{
 .bloc_footer ul{
     display: flex;
     flex-direction: column;
-    
 }
