@@ -1,8 +1,16 @@
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 10px;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
+body:not(footer){
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
 
 li{
     list-style: none;
@@ -13,13 +21,16 @@ li{
 header{
     display: flex;
     justify-content: space-between;
-    height: 100px;
-    align-items: start-end;
+    height: 150px;
+}
+
+.logo{
+    margin: 10px;
 }
 
 .logo img{
-    width: 100px;
-    padding-top: 30px
+    width: 120px;
+    padding-top: 30px;
 }
 
 
@@ -41,8 +52,13 @@ header{
 
 /* TITRES  */
 
+.banniere{
+    margin-bottom: 20px;
+}
+
 .banniere p, h1{
-    margin:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 p{
@@ -53,85 +69,109 @@ h1{
     font-size: 1.5em;
 }
 
-/* TITRES  */   
 /* BARRE DE RECHERCHE */
 
 .banniere_recherche{
     display: flex;
     flex-direction: row;
-    height: 20px;
-    width: max-content;
+    height: 50px;
+    width: 400px;
     align-items: flex-start;
-}
-
-.banniere_recherche i, #site-search, button{
-    height: 35px;
-}
-
-.banniere_recherche i{
-    display: flex;
+    margin-bottom: 20px;
     background-color: #f2f2f2;
-    width: 35px;
-    border: 0px #f2f2f2 solid;
-    border-radius: 10px 0px 0px 10px;
-    align-items: center;
+    border-radius: 20px 0px 0px 20px;    
+    border-bottom: #f2f2f2 1px solid;
+    border-top: 1px solid #f2f2f2;
+}
+
+#cadre_gps{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2(27, 65, 233);
+    height: 50px;
+    width: 57px;
+    border-radius: 20px 0px 0px 20px;
 }
 
-.banniere_recherche button{
-    border: 0;
-    border: 0px #f2f2f2 solid;
-    border-radius: 0px 10px 10px 0px;
-    background-color: rgb(16, 39, 250);
-    color : white;
-    font-size: 0.8em;
+#site_search{
+    height: 50px;
+    width: 203px;
+    border: none;
+}
+
+#button_recherche{
+    height: 50px;
+    width: 140px;
+    border: none;
+    background-color: rgb(27, 65, 233);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0px 20px 20px 0px;
 }
 
 
-.banniere_recherche input{
-    padding: 0;
-    border: 0;
-}
 
 /* BARRE DES FILTRES  */
+
+.filtres{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    font-weight: bold;
+}
+
+#titre_filtre{
+    margin-right: 40px;
+    font-weight: bolder;
+}
+
+#titre_filtre p{
+    font-size: 1em;
+}
 
 #liste_filtres{
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin-top: 40px;
 }
 
-#liste_filtres div {
+.bloc_filtre {
     display: flex;
-    height: max-content;
+    height: 45px;
     margin-right: 20px;
     padding: 0px;
     align-items: center;
     border: 2px solid rgba(95, 81, 81, 0.452);
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #f2f2f2;
 }
 
-.nonet {
-    background-color: chartreuse;}
+
 
 #liste_filtres div i {
     display: flex;
     background-color: #a1aceb;
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    color: rgb(27, 65, 233);
+    margin-right: 5px;
+    margin-left: 0px;
+
 }
 
 #liste_filtres div span{
     display: flex;
-    background-color: white;
     height: 25px;
     align-items: center;
     border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 
@@ -147,44 +187,347 @@ h1{
     width: 1px;
     border: 2px solid rgba(95, 81, 81, 0.452);
     border-radius: 1000%;
+    color: blue;
 }
+
 
 .nb_logement  {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 100px;
 }
 
-/* HEBERGEMENTS */
+.nb_logement div p{
+    font-size: 0.9em;
+}
+
+
+/* -------------------------------------------------- */
+
+/* les blos hotels (Marseille et Populaire)  */
 
 #hebergements{
-    background-color: cyan;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    height: 650px;
     width: 100%;
+    margin-bottom: 50px;
 }
 
-#marseille{
-    background-color: darkgoldenrod;
-    display: flex;
+#titre_marseille{
+
     width: 60%;
+    height: 100px;
+    background-color: #f2f2f2;
+    border-radius: 20px 20px 0px 0px;
 }
 
-#populaires{
-    background-color: darkmagenta;
-    width: 40%;
+#titre_marseille h1{
+    padding-top: 30px;
+    padding-left: 35px;
 }
 
-#photo_marseille{
-    background: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+#titre_populaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    height: 100px;
+    width: 33%;
+    border-radius: 20px 20px 0px 0px;
 }
 
 
-/* ACTIVITES A MARSEILLE */
 
-#activites{
-    background-color: rgb(28, 35, 97);
+
+#heb_marseille{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 550px;
+    width: 60%;
+    background-color: #f2f2f2;
+    border-radius: 0px 0px 20px 20px;
 }
+
+#heb_populaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+    width: 33%;
+    background-color: #f2f2f2;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* Les hotels à Marseille */
+
+#heb_marseille div div h4, p, i{
+    margin: 2px;
+}
+
+.hotel{
+    background-color: white;
+    height: 200px;
+    width: 250px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 3px;
+}
+
+.txt_marseille{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.pix_marseille{
+    background-color: white;
+    background-position: center;
+    height: 130px;
+    width: 250px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 3px;
+}
+
+
+
+#pix_cannebiere         {background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");}
+#pix_hotel_port         {background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");}
+#pix_mouettes           {background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");}
+#pix_merbackground-image{background-image: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");}
+#pix_panier             {background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");}
+#pix_amina              {background-image: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");}
+
+
+
+/* LE AFFICHER PLUS du BAS  */
+
+#afficher_plus{
+    width: 100%;
+    padding-left: 35px;
+}
+
+/*  LE AFFICHER PLUS du BAS   */
+
+/* Les hotels populaires */
+
+#soleil_matin{
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: 400px;
+    justify-content: flex-start;
+    
+    background-color: white;
+    border-radius: 20px;
+}
+
+#pix_soleil_matin{
+    height: 138px;
+    width: 130px;
+    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-position: center;
+    margin-right: 30px;
+    border-radius: 20px 0px 0px 20px;
+    border: 5px white solid ;
+}
+
+#coeur{
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: 400px;
+    justify-content: flex-start;
+    
+    background-color: white;
+    border-radius: 20px;
+}
+
+#pix_coeur{
+    height: 138px;
+    width: 130px;
+    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-position: center;
+    margin-right: 30px;
+    border-radius: 20px 0px 0px 20px;
+    border: 5px white solid ;
+}
+
+#bleu_blanc{
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: 400px;
+    justify-content: flex-start;
+    
+    background-color: white;
+    border-radius: 20px;
+}
+
+#pix_bleu_blanc{
+    height: 138px;
+    width: 130px;
+    background-image: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-position: center;
+    margin-right: 30px;
+    border-radius: 20px 0px 0px 20px;
+    border: 5px white solid;
+}
+
+
+
+
+
+/* -------------------------------------------------- */
+
+
+/* TITRE ACTIVITE A MARSEILLE  */
+
+
+/* ----------------------------------------------------- */
+
+/* BANNIERE ACTIVITES A MARSEILLE */
+
+
+#act_marseille{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+}
+            /* Vieux PORT  */
+#vieux_port{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+    border-radius: 20px ;
+    border: white 3px solid;
+    box-shadow: 0px 6px 6px gray;
+}
+
+#pix_vieux_port{
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-position: center;
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+}
+            /*  POMEGUE */
+#fort_pomegue{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px ;
+    box-shadow: 0px 6px 6px gray;
+
+}
+
+#pix_fort_pomegue{
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-position: center;
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+            /* FRIOUL */
+
+#frioul{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 350px;
+    border-radius: 20px ;
+    box-shadow: 0px 6px 6px gray;
+
+}
+
+#pix_frioul{
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-position-x: center;
+    height: 100px;
+    width: 350px;
+    border-radius: 20px;
+
+}
+
+            /* Calanques */
+
+#calanques{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+    border-radius: 20px ;
+    border: white 3px solid;
+    box-shadow: 0px 6px 6px gray;
+
+}
+
+#pix_calanques{
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-position: center;
+    align-items: stretech;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 350px;
+    border-radius: 30px;
+}
+
+            /* Notre dame de la garde */
+
+#garde{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 350px;
+    border-radius: 20px ;
+    border: white 3px solid;
+    box-shadow: 0px 6px 6px gray;
+}
+
+#pix_garde{
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+            /* Parc Longchamp */
+
+#longchamp{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px ;
+    border: white 3px solid;
+    box-shadow: 0px 6px 6px gray;
+}
+
+#pix_longchamp{
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+
+/* ------------------------------------------------------- */
 
 
 /* Pied de Page  */
@@ -192,15 +535,23 @@ h1{
 #pied_de_page{
     display: flex;
     justify-content: space-between;   
+    width: 100%;
+    background-color: #f2f2f2;
+    margin: 0px;
 }
 
 .bloc_footer{
-    background-color: darkorange;
     display: flex;
     flex-direction: column;
+    width: 33%;
 }
 
 .bloc_footer ul{
     display: flex;
     flex-direction: column;
 }
+
+.bloc_footer ul li{
+    margin-top: 10px;
+}
+
