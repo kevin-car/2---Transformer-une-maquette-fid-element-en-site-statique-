@@ -3,11 +3,13 @@
 <head>
     <meta charset='utf-8'>
     <title>Reservia by Kevin </title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@1,400&display=swap" rel="stylesheet">     <script src="https://kit.fontawesome.com/a2ceaaed7f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@1,400&display=swap" rel="stylesheet">     
+    <script src="https://kit.fontawesome.com/a2ceaaed7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="code_marge">
                     <!--  ENTETE -->
     <header>
         <div class="logo">
@@ -16,8 +18,8 @@
 
         <div class="menu">
             <ul>
-                <li id="hebergement">Hébergement</li>
-                <li id="act">Activités</li> 
+                <li id="hebergement"> <a href="#hebergements">hébergement</a></li>
+                <li id="act"><a href="#act_marseille">Activités</a></li> 
                 <li id="inscrire">S'inscrire</li>
             </ul>
         </div>
@@ -35,9 +37,9 @@
     <div class="banniere_recherche">
         <div id="cadre_gps"><i class="fas fa-map-marker-alt"></i></div>
         <input id="site_search" type="search"  name="q"
-                aria-label="Search through site content" style="font-weight: bold;">
+                aria-label="Search through site content">
         <button id="button_recherche">Rechercher</button>
-        </div>
+    </div>
 
 <!-- barre des filtres  -->
 
@@ -64,16 +66,10 @@
 <div id="hebergements">
 
 
-    <div id="titre_marseille">
-        <h1>Hébergement à Marseille</h1>
-    </div>
-
-    <div id="titre_populaire">
-        <h1>Les plus populaires</h1>
-        <div id="logo_tendance"><i class="fas fa-chart-line"></i></div>
-    </div>
 
     <div id="heb_marseille">
+
+        <h1>Hébergement à Marseille</h1>
 
         <div id="cannebiere" class="hotel">
 
@@ -81,7 +77,11 @@
             <div id="txt_cannebiere" class="txt_marseille">
                 <h4> Auberge la cannebiere</h4>
                 <p>Nuit à partir de 25€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="far fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_gray"></i>
             </div>
 
         </div>
@@ -93,7 +93,11 @@
             <div id="txt_hotel_port" class="txt_marseille">
                 <h4> hotel du port</h4>
                 <p>Nuit à partir de 52€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="far fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
             </div>
 
         </div>
@@ -104,7 +108,11 @@
             <div id="txt_mouettes" class="txt_marseille">
                 <h4> Hôtel les mouettes</h4>
                 <p>Nuit à partir de 76€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="far fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_gray"></i>
             </div>
 
         </div>        
@@ -115,7 +123,11 @@
             <div id="txt_mer" class="txt_marseille">
                 <h4> Hotel de la mer</h4>
                 <p>Nuit à partir de 46€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="far fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_gray"></i>
+                <i class="fas fa-star star_gray"></i>
             </div>
 
         </div>
@@ -126,7 +138,11 @@
             <div id="txt_panier" class="txt_marseille">
                 <h4> Auberge le panier</h4>
                 <p>Nuit à partir de 23€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="far fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_gray"></i>
             </div>
 
         </div>
@@ -137,13 +153,17 @@
             <div id="txt_amina" class="txt_marseille">
                 <h4> Auberge chez Amina</h4>
                 <p>Nuit à partir de 25€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="far fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
             </div>
 
         </div>
     
         <div id="afficher_plus">
-            <a href="afficher__plus" style="color: black; text-decoration: none; font-weight: bold;">Afficher plus</a>
+            <a href="afficher__plus">Afficher plus</a>
         </div>
 
 
@@ -156,32 +176,49 @@
 
     <div id="heb_populaire">
 
-        <div id="soleil_matin">
-            <div id="pix_soleil_matin"></div>
+        <div id="title_popular">
+            <h1>Les plus populaires </h1>
+            <i class="fas fa-chart-line" id="icone_trend"></i>
+        </div>
+
+        <div id="soleil_matin" class="cadres_pop">
+            <div id="pix_soleil_matin" class="pix_hebergement"></div>
             <div id="txt_soleil_matin">
                 <h4> Hôtel le soleil du matin</h4>
                 <p>Nuit à partir de 126€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
             </div>
             
         </div>
 
-        <div id="coeur">
-            <div id="pix_coeur"></div>
+        <div id="coeur" class="cadres_pop">
+            <div id="pix_coeur" class="pix_hebergement"></div>
             <div id="txt_soleil_matin">
                 <h4> Au coeur de l'eau </br> Chambres d'hôtes</h4>
                 <p>Nuit à partir de 71€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_gray"></i>
             </div>
             
         </div>
 
-        <div id="bleu_blanc">
-            <div id="pix_bleu_blanc"></div>
+        <div id="bleu_blanc" class="cadres_pop">
+            <div id="pix_bleu_blanc" class="pix_hebergement"></div>
             <div id="txt_bleu_blanc">
                 <h4> Hôtel tout bleu et blanc</h4>
                 <p>Nuit à partir de 68€</p>
-                <i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i><i class="fas fa-star" style="color: blue;"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_blue"></i>
+                <i class="fas fa-star star_gray"></i>
             </div>
             
         </div>
@@ -191,49 +228,53 @@
 </div>
 <!-- --------------------------------------------------- -->
 
-<h1>Activités à Marseille</h1>
+<h1 id="titr_act_marseille">Activités à Marseille</h1>
 
 <!-- ---------------------------------------------------- -->
 
 
 <div id="act_marseille">
 
-    <div id="vieux_port">
-        <div id="pix_vieux_port"></div>
-        <div id="txt_vieux_port"> <h4>Vieux Port</h4> </div>
-
+    <div id="banniere_1" class="act_banniere">
+        <div id="vieux_port" class="grand_cadre">
+            <div id="pix_vieux_port" class="grande_photos"></div>
+            <div id="txt_vieux_port"> <h4>Vieux Port</h4> </div>
+        </div>
     </div>
 
-    <div id="fort_pomegue">
-        <div id="pix_fort_pomegue"></div>
-        <div id="txt_fort_pomegue"> <h4>Fort de Pomègues</h4> </div>
+    <div id="banniere_2" class="act_banniere">
+        <div id="fort_pomegue" class="moyen_cadre">
+            <div id="pix_fort_pomegue" class="moyenne_photos"></div>
+            <div id="txt_fort_pomegue"> <h4>Fort de Pomègues</h4> </div>
+        </div>
 
+        <div id="frioul" class="petit_cadre">
+            <div id="pix_frioul" class="petite_photos"></div>
+            <div id="txt_frioul"> <h4>Iles du Frioul</h4> </div>
+        </div>
     </div>
 
-    <div id="frioul">
-        <div id="pix_frioul"></div>
-        <div id="txt_frioul"> <h4>Iles du Frioul</h4> </div>
-
+    <div id="banniere_3" class="act_banniere">
+        <div id="calanques" class="grand_cadre">
+            <div id="pix_calanques" class="grande_photos"></div>
+            <div id="txt_calanques"> <h4>Parc National des Calanques</h4> </div>
+        </div>
     </div>
 
-    <div id="calanques">
-        <div id="pix_calanques"></div>
-        <div id="txt_calanques"> <h4>Parc National des Calanques</h4> </div>
+    <div id="banniere_4" class="act_banniere"> 
+        <div id="garde" class="petit_cadre">
+            <div id="pix_garde" class="petite_photos"></div>
+            <div id="txt_garde"> <h4>Notre-Dame-De-La-Garde</h4> </div>
+        </div>
 
+        <div id="longchamp" class="moyen_cadre">
+            <div id="pix_longchamp" class="moyenne_photos"></div>
+            <div id="txt_longchamp"> <h4> Parc Longchamp</h4> </div>
+
+        </div>
     </div>
 
-    <div id="garde">
-        <div id="pix_garde"></div>
-        <div id="txt_garde"> <h4>Notre-Dame-De-La-Garde</h4> </div>
-
-    </div>
-
-    <div id="longchamp">
-        <div id="pix_longchamp"></div>
-        <div id="txt_longchamp"> <h4> Parc Longchamp</h4> </div>
-
-    </div>
-
+</div>
 </div>
 
 <!-- ------------------------------------------------- -->
@@ -268,3 +309,5 @@
         </div>
 
     </footer>
+</body>
+</html>
