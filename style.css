@@ -1,6 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     padding: 0;
+    margin: 0;
 }
 
 #marge
@@ -61,12 +62,12 @@ header div a{
 }
 
 #hebergement{
-    border-top: 3px #DEEBFF solid;
+    border-top: 3px #0065FC solid;
     width: 10%;
 }
 
 #hebergement a{
-    color: #DEEBFF;
+    color: #0065FC;
 }
 
 #act{
@@ -83,11 +84,11 @@ header div a{
 #sinscrire{
     border-top: 3px white solid;
     width: 10%;
-
 }
 
 #sinscrire a{
     color: #0065FC;
+    font-weight: bold;
 }
 
 
@@ -166,9 +167,8 @@ h1{
     font-size: 1em;
     font-weight: bold;
     border-radius: 0px 20px 20px 0px;
+    cursor: zoom-in;
 }
-
-
 
 /* BARRE DES FILTRES  */
 
@@ -213,6 +213,10 @@ h1{
     border-radius: 25px;
     margin-bottom: 15px;
     text-decoration: none;
+}
+
+#liste_filtres :hover{
+    background-color: #f2f2f2;
 }
 
 #liste_filtres a i {
@@ -271,7 +275,7 @@ h1{
 
 /* -------------------------------------------------- */
 
-/* les blos hotels (Marseille et Populaire)  */
+/* les blocs hotels (Marseille et Populaire)  */
 
 #hebergements{
     display: flex;
@@ -282,18 +286,13 @@ h1{
 }
 
 #heb_marseille h1{
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 5%;
     width: 100%;
 }
 
-#heb_populaire h1{
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    width: 100%;
-}
+
 
 #heb_marseille{
     display: flex;
@@ -321,7 +320,8 @@ h1{
 #title_popular{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
     margin-bottom: 0px;
 }
 
@@ -347,8 +347,14 @@ h1{
 
 /* Les hotels à Marseille */
 
+figure a{
+    text-decoration: none;
+}
+
 figcaption h4, p, i{
     margin: 1px;
+    text-decoration: none;
+    color: black;
 }
 
 .hotel{
@@ -387,11 +393,12 @@ figcaption h4, p, i{
     object-fit: cover;
 }
 
-.cadres_pop{
+.cadres_pop a{
     display: flex;
     flex-direction: row;
     height: 150px;
-    width: 350px;
+    max-width: 85%;
+    min-width: 350px;
     justify-content: flex-start;
     background-color: white;
     border-radius: 20px;
@@ -399,12 +406,12 @@ figcaption h4, p, i{
 
 .cadres_pop h4{
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 30px;
     padding-right: 10px;
 }
 
 .cadres_pop p{
-    padding-bottom: 45px;
+    padding-bottom: 20px;
 }
 
 
@@ -479,6 +486,7 @@ figcaption h4, p, i{
     width: 330px;
 }
 
+
 #act_marseille{
     display: flex;
     flex-direction: row;
@@ -489,9 +497,14 @@ figcaption h4, p, i{
     margin-bottom: 50px;
 }
 
-.act_banniere figure figcaption h4{
+.act_banniere h4{
     padding-top: 10px;
     padding-left: 10px;
+    text-decoration: none;
+}
+
+.act_banniere a{
+    text-decoration: none;
 }
 
 /* ------------------------------------------------------- */
@@ -593,39 +606,23 @@ figcaption h4, p, i{
     .act_banniere{
         width: 100%;
     }
+}
 
 /* redimensionner les photos "activités à marseille", 
 replacer les 3 ancres en version mobiles */
 
     @media all and (max-width:600px){
 
-    .grande_photos{
-        width: 100%;
-        height: 250px;
-    }
-    .moyenne_photos{
-        width: 100%;
-        height: 250px;
-    }
-    
-    .petite_photos{
+    .grande_photos, .moyenne_photos, .petite_photos{
         width: 100%;
         height: 250px;
     }
 
-    .grand_cadre{
+    .grand_cadre, .moyen_cadre, .petit_cadre{
         width: 100%;
         height: 300px;
     }
-    .moyen_cadre{
-        width: 100%;
-        height: 300px;
-    }
-    
-    .petit_cadre{
-        width: 100%;
-        height: 300px;
-    }
+
 
     .act_banniere{
         width: 100%;
@@ -701,5 +698,4 @@ replacer les 3 ancres en version mobiles */
     }
 
 
-}
 }
