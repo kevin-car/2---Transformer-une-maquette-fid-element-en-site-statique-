@@ -580,9 +580,9 @@ figcaption h4, p, #etoile{
     border-radius: 0px;
 }
 
-    h1{
-    text-align: center;
-    padding-bottom: 20px;
+h1{
+text-align: center;
+padding-bottom: 20px;
 }
 
 .hotel{
@@ -610,35 +610,29 @@ figcaption h4, p, #etoile{
         font-size: 29px;
         text-align: left;
         height: max-content;
+        justify-content: center;
     }
 
 
-    .act_banniere{
-        width: 100%;
+    #act_marseille{
+        display: flex;
+        justify-content: center;
+
     }
 }
 
 /* redimensionner les photos "activités à marseille", 
 replacer les 3 ancres en version mobiles */
 
-    @media all and (max-width:600px){
+    @media all and (max-width:1630px){
 
-    .grande_photos, .moyenne_photos, .petite_photos{
-        width: 100%;
-        height: 250px;
+
+
+    .petit_cadre, .moyen_cadre, .grand_cadre{
+        margin-bottom: 40px;
+
     }
 
-    .grand_cadre, .moyen_cadre, .petit_cadre{
-        width: 100%;
-        height: 300px;
-        margin-bottom: 30px;
-    }
-
-
-    .act_banniere{
-        width: 100%;
-        flex-direction: column;
-    }
 
 /* Menu Principal supérieur  */
 
@@ -666,17 +660,22 @@ replacer les 3 ancres en version mobiles */
         padding-left: 0;
     }
 
-    #hebergement a{
+    /* A finir 
+
+    #hebergement :hover #act :hover {
+        border-bottom: 3px solid aqua ;
+        border-color: aqua;
+    }
+     */
+
+
+    #hebergement a {
         color: #0065FC;
-        font-weight: 600;
+        font-weight: (600);
     }
     
     .bloc_header :hover{
         border-top: none;
-    }
-
-    #hebergement :hover, #act :hover{
-        border-bottom: #df00fc;
     }
     
     #sinscrire{
