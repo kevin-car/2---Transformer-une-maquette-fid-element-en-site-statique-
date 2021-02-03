@@ -34,6 +34,7 @@ li{
     display: flex;
     align-items: flex-start;
     margin: 0px;
+    width: 70%;
 }
 
 #logo img{
@@ -43,66 +44,50 @@ li{
 header{
     display: flex;
     flex-direction: row;
-}
-
-header div{
-    padding: 10px;
-    text-align: center;
-    padding-top: 50px;
-}
-
-header div a{
-    text-decoration: none;
-    font-size: small;
-
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom:50px
 }
 
 #logo{
-    width: 70%;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
 
-#hebergement{
-    border-top: 3px #0065FC solid;
+.bloc_header{
+    display: flex;
+    justify-content: center;
     width: 10%;
+}
+
+.bloc_header a{
+    text-decoration: none;
+    font-size: small;
+    padding-right: 20%;
+    padding-left: 20%;    
+    padding-top: 40px;
+}
+
+.bloc_header :hover{
+    border-top: #0065FC 2px solid;
 }
 
 #hebergement a{
+
     color: #0065FC;
+    font-weight: normal;
 }
 
-#act{
-    border-top: 3px white solid;
-    color: black;
-    width: 10%;
-
-}
 
 #act a{
     color: black;
 }
 
-#sinscrire{
-    border-top: 3px white solid;
-    width: 10%;
-}
-
 #sinscrire a{
     color: #0065FC;
-    font-weight: bold;
+    font-weight: bolder;
 }
-
-
-header ul  {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-}
-
-header ul li a {
-    text-decoration: none;
-}
-
-
 
 
 /* TITRES  */
@@ -206,7 +191,7 @@ h1{
 .bloc_filtre {
     display: flex;
     height: 45px;
-    margin-right: 20px;
+    margin-right: 22px;
     padding: 0px;
     align-items: center;
     border: 2px solid rgba(95, 81, 81, 0.452);
@@ -286,7 +271,7 @@ h1{
 }
 
 #heb_marseille h1{
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: 2%;
     margin-left: 5%;
     width: 100%;
@@ -323,6 +308,8 @@ h1{
     justify-content: space-around;
     align-items: flex-start;
     margin-bottom: 0px;
+    margin-top: 4%;
+
 }
 
 #icone_trend {
@@ -351,7 +338,7 @@ figure a{
     text-decoration: none;
 }
 
-figcaption h4, p, i{
+figcaption h4, p, #etoile{
     margin: 1px;
     text-decoration: none;
     color: black;
@@ -376,7 +363,7 @@ figcaption h4, p, i{
     height: 130px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
-    padding: 3px;
+    padding: 0px;
     object-fit: cover;
 }
 
@@ -389,7 +376,7 @@ figcaption h4, p, i{
     border-radius: 20px 0px 0px 20px;
     border: 5px white solid ;    
     height: 138px;
-    width: 130px;
+    width: 40%;
     object-fit: cover;
 }
 
@@ -397,22 +384,31 @@ figcaption h4, p, i{
     display: flex;
     flex-direction: row;
     height: 150px;
-    max-width: 85%;
+    width: 350px;
     min-width: 350px;
     justify-content: flex-start;
     background-color: white;
     border-radius: 20px;
 }
 
-.cadres_pop h4{
-    padding-top: 10px;
-    padding-bottom: 30px;
+#act_marseille{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+#txt_soleil_matin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding-right: 10px;
 }
 
-.cadres_pop p{
-    padding-bottom: 20px;
+#txt_soleil_matin p{
+    transform: translateY(-20px);
 }
+
+
 
 
 /* -------------------------------------------------- */
@@ -426,14 +422,14 @@ figcaption h4, p, i{
     background-position: center;
     height: 400px;
     width: 350px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
 .moyenne_photos{
     background-position: center;
     height: 200px;
     width: 350px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
 
@@ -441,7 +437,7 @@ figcaption h4, p, i{
     background-position-x: center;
     height: 100px;
     width: 350px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 
 }
@@ -452,7 +448,6 @@ figcaption h4, p, i{
     height: 450px;
     width: 350px;
     border-radius: 20px ;
-    border: white 3px solid;
     box-shadow: 0px 6px 6px gray;
     margin: 0px;
 }
@@ -483,7 +478,8 @@ figcaption h4, p, i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 330px;
+    width: 350px;
+
 }
 
 
@@ -498,13 +494,18 @@ figcaption h4, p, i{
 }
 
 .act_banniere h4{
-    padding-top: 10px;
     padding-left: 10px;
     text-decoration: none;
 }
 
 .act_banniere a{
     text-decoration: none;
+}
+
+.act_banniere figcaption{
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
 /* ------------------------------------------------------- */
@@ -539,7 +540,7 @@ figcaption h4, p, i{
 }
 
 /* ------------------------ */
-@media all and (max-width: 1300px)
+@media all and (max-width: 1350px)
 {
     #hebergements{
         flex-direction: column;
@@ -553,6 +554,8 @@ figcaption h4, p, i{
     #heb_populaire{
         width: 100%;
     }
+
+
 }
 
 @media all and (max-width:1000px){
@@ -566,20 +569,27 @@ figcaption h4, p, i{
     width: 100%;
 }
 
-    #heb_marseille{
-        width: 100%;
-    }
+#heb_marseille{
+    background-color: white;
+}
 
-    #heb_populaire{
-        width: 100%;
-        height: auto;
-        margin: 0px;
-    }
+#heb_populaire{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border-radius: 0px;
+}
 
-     h1{
-        text-align: center;
-        padding-bottom: 20px;
-    }
+    h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.hotel{
+    box-shadow: 0px 6px 6px gray;
+    width: 330px;
+
+}
 }
 
 @media all and (max-width:900px){
@@ -621,6 +631,7 @@ replacer les 3 ancres en version mobiles */
     .grand_cadre, .moyen_cadre, .petit_cadre{
         width: 100%;
         height: 300px;
+        margin-bottom: 30px;
     }
 
 
@@ -644,9 +655,9 @@ replacer les 3 ancres en version mobiles */
         order: -1;
     }
     
-    #hebergement{
+    #hebergement, #act{
         border-top: 1px white solid;
-        border-bottom: 3px #0065FC solid;
+        border-bottom: 3px #f2f2f2 solid;
         width: 50%;
         padding-top: 50px;
         padding-bottom: 20px;
@@ -657,21 +668,19 @@ replacer les 3 ancres en version mobiles */
 
     #hebergement a{
         color: #0065FC;
+        font-weight: 600;
     }
     
-    #act{
-        width: 50%;
-        padding-top: 50px;
-        text-align: center;
-        order: 3;
-        border-bottom: 3px #f2f2f2 solid;
-        padding-right: 0;
-        padding-left: 0;
+    .bloc_header :hover{
+        border-top: none;
+    }
+
+    #hebergement :hover, #act :hover{
+        border-bottom: #df00fc;
     }
     
     #sinscrire{
-        width: 15%;
-        padding-top: 50px;
+        width: 25%;
         text-align: center;
         order: -1;
     }
