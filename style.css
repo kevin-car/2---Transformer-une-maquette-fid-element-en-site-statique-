@@ -539,6 +539,12 @@ figcaption h4, p, #etoile{
     width: 100%;
 }
 
+
+
+
+
+
+
 /* ------------------------ */
 @media all and (max-width: 1350px)
 {
@@ -613,12 +619,10 @@ padding-bottom: 20px;
         justify-content: center;
     }
 
-
     #act_marseille{
-        display: flex;
         justify-content: center;
-
     }
+
 }
 
 /* redimensionner les photos "activités à marseille", 
@@ -630,7 +634,6 @@ replacer les 3 ancres en version mobiles */
 
     .petit_cadre, .moyen_cadre, .grand_cadre{
         margin-bottom: 40px;
-
     }
 
 
@@ -688,8 +691,7 @@ replacer les 3 ancres en version mobiles */
         font-weight: bolder;
     }
 
-
-/* PIED DE PAGE */
+    /* PIED DE PAGE */
     #pied_de_page{
         flex-direction: column;
         width: 100%;
@@ -704,6 +706,4 @@ replacer les 3 ancres en version mobiles */
         text-align: left;
         width: 100%;
     }
-
-
 }
