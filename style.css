@@ -330,8 +330,7 @@ h1{
 #title_popular{
     display: flex;
     flex-direction: row;
-    justify-content: space-between
-    ;
+    justify-content: space-between;
 }
 
 #icone_trend {
@@ -345,8 +344,8 @@ h1{
 
 #afficher_plus{
     width: 100%;
-    padding-left: 35px;
-    margin:25px;
+    margin:5px;
+    margin-bottom: 15px;
 }
 
 #afficher_plus a{
@@ -435,9 +434,6 @@ figcaption h4, p, #etoile{
     padding-right: 0;
 }
 
-.txt_pop p{
-    padding-bottom: 23%;
-}
 
 .cadres_pop{
     margin-left: 0;
@@ -563,13 +559,14 @@ figcaption h4, p, #etoile{
 }
 
 .bloc_footer h3{
-    padding-left: 40px;
+    padding-left: 80px;
     padding-top: 40px;
 }
 
 .bloc_footer ul{
     display: flex;
     flex-direction: column;
+    padding-left: 80px;
 }
 
 .bloc_footer ul li{
@@ -758,11 +755,6 @@ header{
 #sinscrire{
     font-weight: bolder;
 }
-
-
-
-
-
 }
 
 @media all and (max-width:900px){
