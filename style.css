@@ -296,6 +296,7 @@ h1{
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 #heb_marseille a{
@@ -309,13 +310,14 @@ h1{
     justify-content: space-around;
     align-content: center;
     min-height: 650px;
-    width: 25%;
+    width: 32%;
     background-color: #f2f2f2;
     border-radius: 20px 20px 20px 20px;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 #bloc_populaire{
@@ -360,7 +362,7 @@ figure a{
     text-decoration: none;
 }
 
-figcaption h4, p, #etoile{
+figcaption h3, p, #etoile{
     margin: 1px;
     text-decoration: none;
     color: black;
@@ -452,7 +454,7 @@ figcaption h4, p, #etoile{
 .grande_photos{
     background-position: center;
     height: 400px;
-    width: 350px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -460,7 +462,7 @@ figcaption h4, p, #etoile{
 .moyenne_photos{
     background-position: center;
     height: 200px;
-    width: 350px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -468,7 +470,7 @@ figcaption h4, p, #etoile{
 .petite_photos{
     background-position-x: center;
     height: 100px;
-    width: 350px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -477,7 +479,7 @@ figcaption h4, p, #etoile{
     display: flex;
     flex-direction: column;
     height: 450px;
-    width: 350px;
+    width: 100%;
     border-radius: 20px ;
     box-shadow: 0px 6px 6px gray;
     margin: 0px;
@@ -487,7 +489,7 @@ figcaption h4, p, #etoile{
     display: flex;
     flex-direction: column;
     height: 250px;
-    width: 350px;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 0px 6px 6px gray;
     margin: 0px;
@@ -497,7 +499,7 @@ figcaption h4, p, #etoile{
     display: flex;
     flex-direction: column;
     height: 150px;
-    width: 350px;
+    width: 100%;
     border-radius: 20px ;
     box-shadow: 0px 6px 6px gray;
     margin: 0px;
@@ -523,7 +525,7 @@ figcaption h4, p, #etoile{
     margin-bottom: 50px;
 }
 
-.act_banniere h4{
+.act_banniere h3{
     padding-left: 10px;
     text-decoration: none;
 }
@@ -558,7 +560,7 @@ figcaption h4, p, #etoile{
     width: 33%;
 }
 
-.bloc_footer h3{
+.bloc_footer h2{
     padding-left: 80px;
     padding-top: 40px;
 }
@@ -591,7 +593,7 @@ figcaption h4, p, #etoile{
         width: 100%;
     }
 
-    .bloc_footer h3, ul li{
+    .bloc_footer h2, ul li{
         text-align: left;
     }
 
@@ -626,6 +628,7 @@ figcaption h4, p, #etoile{
 
 #heb_marseille{
     width: 100%;
+    justify-content: space-around;
 }
 
 .hotel{
@@ -635,7 +638,7 @@ figcaption h4, p, #etoile{
 
 
 /* ------------------------ */
-@media all and (max-width: 1024px){
+@media all and (max-width: 1080px){
 
 #heb_marseille{
     width: 100%;
@@ -757,7 +760,7 @@ header{
 }
 }
 
-@media all and (max-width:900px){
+@media all and (max-width:768px){
 
     p{
         font-size:larger;
@@ -793,8 +796,6 @@ header{
     .petit_cadre, .moyen_cadre, .grand_cadre{
     height: 200px;
     }
-
-
 
     }
 }
